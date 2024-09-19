@@ -2,6 +2,10 @@
   "name": "courze",
   "version": "1.0.0",
   "description": "Web3 Language Learning Platform",
+  "workspaces": [
+    "src/courze_backend",
+    "src/courze_frontend"
+  ],
   "dependencies": {
     "azle": "^0.24.1"
   },
