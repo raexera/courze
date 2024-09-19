@@ -1,6 +1,7 @@
 service: () -> {
-    enrollInCourse: (text, text) -> (bool);
-    getCourseProgress: (text, text) -> (opt record {refundReceived:nat; progress:float64}) query;
-    updateProgress: (text, text, float64) -> (bool);
-    uploadCourse: (record {id:text; title:text; progressToRefund:float64; instructor:text; price:nat}) -> (bool);
+    enrollInCourse: (text, principal) -> (bool);
+    getCourseProgress: (text, principal) -> (opt record {refundReceived:nat; progress:float64}) query;
+    getNFTCertificate: (text) -> (opt text) query;
+    updateProgress: (text, principal, float64) -> (bool);
+    uploadCourse: (record {id:text; title:text; progressToRefund:float64; instructor:principal; price:nat}) -> (bool);
 }
