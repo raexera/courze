@@ -1,4 +1,6 @@
 service: () -> {
-    getMessage: () -> (text) query;
-    setMessage: (text) -> ();
+    enrollInCourse: (text, text) -> (bool);
+    getCourseProgress: (text, text) -> (opt record {refundReceived:nat; progress:float64}) query;
+    updateProgress: (text, text, float64) -> (bool);
+    uploadCourse: (record {id:text; title:text; progressToRefund:float64; instructor:text; price:nat}) -> (bool);
 }

@@ -1,4 +1,7 @@
 {
+  "name": "courze",
+  "version": "1.0.0",
+  "description": "Web3 Language Learning Platform",
   "dependencies": {
     "azle": "^0.24.1"
   },
