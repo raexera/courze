@@ -1,0 +1,15 @@
+{
+  "canisters": {
+    "courze_backend": {
+      "type": "azle",
+      "main": "src/backend/index.ts",
+      "candid": "src/backend/courze_backend.did",
+      "build": "node_modules/.bin/azle compile courze_backend",
+      "wasm": ".azle/courze_backend/courze_backend.wasm",
+      "gzip": true,
+      "custom": {
+        "experimental": true
+      }
+    }
+  }
+}
